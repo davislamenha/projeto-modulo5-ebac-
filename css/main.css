@@ -102,10 +102,17 @@ margin-right: 8px;
   cursor: pointer;
   text-transform: uppercase;
   background-color: #182c61;
-  color: #fff;
+  color: #ecf0f1;
   border: none;  
   border-radius: 5px;
 }
 #contato form button:hover {
   background-color: #314e9e;
+}
+
+/* ======= FOOTER ======== */
+footer {
+  background-color: #182c61;
+  color: #ecf0f1;
+  padding-block: 16px;
 }
