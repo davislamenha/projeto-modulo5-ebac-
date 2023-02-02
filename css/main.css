@@ -72,6 +72,9 @@ header nav li a {
 #sobre {
   color: #182c61;
 }
+#sobre .img-loja {
+  border-radius: 5px;
+}
 .brands-list {
   margin-top: 24px;
 }
@@ -79,7 +82,7 @@ header nav li a {
   display: inline;
   margin-right: 8px;
 }
-.brands-list img, .social-links img {
+.brands-list img, .social-links img { 
   height: 24px;
 }
 
