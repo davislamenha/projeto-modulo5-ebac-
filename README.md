@@ -19,7 +19,7 @@ Criar um site de um tema a seu critério:
 
 > Deploy realizado na vercel, link disponível abaixo:
 
-<a href="https://gameshop-modulo5-ebac5.vercel.app/">Game Shop</a>
+<a href="https://projeto-modulo5-ebac.vercel.app/">Game Shop</a>
 
 #### Tecnologias utilizadas
 
