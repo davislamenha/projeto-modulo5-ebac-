@@ -9,19 +9,24 @@ ul li {
 a {
   text-decoration: none;
 }
-body, input, textarea {
+body,
+input,
+textarea {
   font-family: 'Roboto', sans-serif;
 }
 .container {
-  width: min(100%, 1280px);
+  width: min(100% - 30px, 1440px);
   margin-inline: auto;
 }
-header .container,  section .container{
+header .container {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-header, section h2, section h3 {
+
+header,
+section h2,
+section h3 {
   font-weight: normal;
   font-family: 'Bungee', cursive;
 }
@@ -30,7 +35,7 @@ section .container {
   gap: 16px;
 }
 section {
-padding-block: 24px;
+  padding-block: 24px;
 }
 section h2 {
   position: relative;
@@ -41,29 +46,30 @@ section h2::after {
   position: absolute;
   content: '';
   height: 1px;
- width: 100%;
- bottom: 10px;
+  width: 100%;
+  bottom: 10px;
   background-color: #182c61;
-  
-
+  bottom: 0;
 }
 section p {
   margin-bottom: 8px;
 }
-form input, form textarea, form button {
-display: block;
-width: 320px;
-margin-block: 4px 8px;
-padding: 8px;
+form input,
+form textarea,
+form button {
+  display: block;
+  width: 320px;
+  margin-block: 4px 8px;
+  padding: 8px;
 }
 form textarea {
   height: 150px;
   resize: none;
 }
-input:focus, textarea:focus {
+input:focus,
+textarea:focus {
   outline-color: #182c61;
 }
-
 
 /* ======= HEADER ======== */
 header {
@@ -81,7 +87,11 @@ header nav li a {
 }
 
 /* ======= SOBRE ======== */
-#sobre { 
+#sobre .container {
+  display: grid;
+  grid-template-columns: auto 1fr;
+}
+#sobre {
   color: #182c61;
 }
 #sobre .img-loja {
@@ -94,13 +104,18 @@ header nav li a {
   display: inline;
   margin-right: 8px;
 }
-.brands-list img, .social-links img { 
+.brands-list img,
+.social-links img {
   height: 24px;
 }
 
 /* ======= CONTATO ======== */
+#contato .contato-metodos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
 #contato {
-  background-color: #FAFFFF;
+  background-color: #faffff;
 }
 #contato .container {
   display: block;
@@ -112,16 +127,16 @@ header nav li a {
   display: flex;
   justify-content: space-between;
 }
-.social-links li{
-display: inline;
-margin-right: 8px;
+.social-links li {
+  display: inline;
+  margin-right: 8px;
 }
 #contato form button {
   cursor: pointer;
   text-transform: uppercase;
   background-color: #182c61;
   color: #ecf0f1;
-  border: none;  
+  border: none;
   border-radius: 5px;
 }
 #contato form button:hover {
@@ -133,4 +148,23 @@ footer {
   background-color: #182c61;
   color: #ecf0f1;
   padding-block: 16px;
+}
+
+/* ======= MEDIA QUERY ======== */
+
+@media (max-width: 1040px) {
+  #sobre img {
+    max-width: 100%;
+    object-fit: cover;
+    justify-self: center;
+    margin-bottom: 12px;
+  }
+  #sobre .container {
+    grid-template-columns: 1fr;
+  }
+
+  #contato .contato-metodos {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
 }
