@@ -47,9 +47,8 @@ section h2::after {
   content: '';
   height: 1px;
   width: 100%;
-  bottom: 10px;
   background-color: #182c61;
-  bottom: 0;
+  bottom: 0px;
 }
 section p {
   margin-bottom: 8px;
